@@ -1,0 +1,142 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "00000000-0000-0000-0000-000000000001",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "00000000-0000-0000-0000-000000000002",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "00000000-0000-0000-0000-000000000003",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "00000000-0000-0000-0000-000000000004",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00000000-0000-0000-0000-000000000005",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "stickDeadzone(min=0.1)",
+                    "groups": "Gamepad",
+                    "action": "Move"
+                },
+                {
+                    "name": "",
+                    "id": "00000000-0000-0000-0000-000000000006",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump"
+                },
+                {
+                    "name": "",
+                    "id": "00000000-0000-0000-0000-000000000007",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Sprint"
+                },
+                {
+                    "name": "WASD",
+                    "id": "00000000-0000-0000-0000-000000000008",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move"
+                },
+                {
+                    "name": "WASD",
+                    "id": "00000000-0000-0000-0000-000000000009",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move"
+                },
+                {
+                    "name": "WASD",
+                    "id": "00000000-0000-0000-0000-000000000010",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move"
+                },
+                {
+                    "name": "WASD",
+                    "id": "00000000-0000-0000-0000-000000000011",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move"
+                },
+                {
+                    "name": "WASD",
+                    "id": "00000000-0000-0000-0000-000000000012",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move"
+                },
+                {
+                    "name": "Space",
+                    "id": "00000000-0000-0000-0000-000000000013",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Jump"
+                },
+                {
+                    "name": "LeftShift",
+                    "id": "00000000-0000-0000-0000-000000000014",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Sprint"
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "id": "00000000-0000-0000-0000-000000000015"
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "id": "00000000-0000-0000-0000-000000000016"
+        }
+    ]
+}
